@@ -25,13 +25,15 @@ This command returned 10, meaning there have been 10 commits in the repository.
 
 I determined the last modification date of the README.md file using the following command in Windows PowerShell:
 git log -1 README.md
-This command returned the following result:
-commit 7cde54ff541b3b2d38f29348a3268d2e26cd9e81
+commit 14bb52e627c3d7f577b9729c49dfb4a0b25d4690 (HEAD -> master, origin/master, origin/HEAD)
 Author: francisco <franciscodelaespriella8@gmail.com>
-Date:   Sun Feb 23 19:08:55 2025 -0500
+Date:   Sun Feb 23 21:29:26 2025 -0500
 
-    Updated README with name and FSUID
-Thus, the README.md file was last modified on Sun, Feb 23, 2025, at 19:08:55 (-0500) by francisco.
+    Update README to include name and FSUID
+
+    Added my name and FSUID to the README file to personalize the repository
+
+Thus, the README.md file was last modified on Sun, Feb 23, 2025, at  21:29:26 (-0500) by francisco.
 
 4. Mention two reasons why branches are used in a Git repository (4 points)
 
