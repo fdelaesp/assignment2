@@ -1,0 +1,72 @@
+Git Tutorials Completion Date: February 23, 2025
+GitHub Setup Date: In early 2023
+GitHub Repository Access: fdelaesp
+
+1. Paste the console output you saved at the end of step 3.C (2 points)
+	
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.idea/
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+2. How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+To find the total number of commits made in the repository (by anyone), I used:
+git rev-list --all --count
+This command returned 10, meaning there have been 10 commits in the repository.
+
+3. When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+
+I determined the last modification date of the README.md file using the following command in Windows PowerShell:
+git log -1 README.md
+This command returned the following result:
+commit 7cde54ff541b3b2d38f29348a3268d2e26cd9e81
+Author: francisco <franciscodelaespriella8@gmail.com>
+Date:   Sun Feb 23 19:08:55 2025 -0500
+
+    Updated README with name and FSUID
+Thus, the README.md file was last modified on Sun, Feb 23, 2025, at 19:08:55 (-0500) by francisco.
+
+4. Mention two reasons why branches are used in a Git repository (4 points)
+
+	1. Parallel Development: Branches allow developers to work on new features, bug 	fixes, 	or experiments independently without disrupting the stable main branch.
+
+	2. Safe Testing: They provide an isolated environment for testing changes before 	merging them into the production branch, reducing the risk of introducing errors.
+
+5. What is the difference between git log and git status? (4 points)
+	git log: Displays the commit history, including commit messages, dates, and 	authors, which helps track all changes made over time.
+
+	git status: Shows the current state of the working directory and staging area, 	indicating which files are modified, untracked, or ready to be committed.
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+To view commits that include changes to “Vehicle.h”, I used: git log -- Vehicle.h.
+
+7. What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+To filter commits by messages containing the word “file”, I used: git log --grep="file".
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+
+(I) What is inheritance?
+Inheritance is a mechanism in OOP where a class (subclass) inherits properties and methods from another class (superclass), promoting code reuse and establishing a natural hierarchy.
+
+(II) What is polymorphism?
+Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables a single interface to represent different underlying forms (data types), allowing methods to behave differently based on the actual object.
+
+(III) What is encapsulation?
+Encapsulation is the principle of bundling data (attributes) and the methods that operate on the data into a single unit or class. It restricts direct access to some of an object’s components, ensuring that object integrity is maintained.
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+
+In the Dictator and Lieutenants workflow, a single authoritative person (the dictator) has the final say on merging changes, while several lieutenants manage subsets of contributions and resolve conflicts within their teams. In contrast, the Integration Manager workflow involves an integration manager who oversees merging from multiple independent public repositories, serving as the sole gatekeeper for integrating all changes into the central repository.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+A team of 100 developers benefits from the Dictator and Lieutenants workflow because it distributes integration responsibilities among multiple lieutenants. This minimizes bottlenecks and speeds up conflict resolution by allowing specialized oversight for different parts of the project. In a Centralized workflow, a single manager must handle all incoming changes, which can create delays and inefficiencies, especially with a large team.
+
